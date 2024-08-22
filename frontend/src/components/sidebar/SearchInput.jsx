@@ -36,7 +36,7 @@ const SearchInput = () => {
 			{/* Input field for searching conversations */}
 			<input
 				type='text'
-				placeholder='Search…'
+				placeholder=' Search…'
 				className='input input-bordered rounded-full'
 				value={search}
 				onChange={(e) => setSearch(e.target.value)} // Update search state on input change

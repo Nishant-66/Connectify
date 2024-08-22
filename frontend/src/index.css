@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../public/What\ should\ be\ the\ perfect\ wallpaper\ for\ WhatsApp_.jpeg");
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/df36e8e0-9f7a-4a75-8191-82b8d2d82d84.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

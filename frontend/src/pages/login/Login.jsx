@@ -23,7 +23,7 @@ const Login = () => {
 				{/* Title */}
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Login
-					<span className='text-blue-500'> ChatApp</span>
+					<span className='text-blue-500'> Connectify</span>
 				</h1>
 
 				{/* Login form */}
@@ -31,11 +31,11 @@ const Login = () => {
 					{/* Username input field */}
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-base label-text  text-gray-300'>Username</span>
 						</label>
 						<input
 							type='text'
-							placeholder='Enter username'
+							placeholder=' Enter username'
 							className='w-full input input-bordered h-10'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)} // Update username state on change
@@ -45,11 +45,11 @@ const Login = () => {
 					{/* Password input field */}
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-base label-text  text-gray-300'>Password</span>
 						</label>
 						<input
 							type='password'
-							placeholder='Enter Password'
+							placeholder=' Enter Password'
 							className='w-full input input-bordered h-10'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)} // Update password state on change
@@ -57,13 +57,13 @@ const Login = () => {
 					</div>
 
 					{/* Link to Signup page */}
-					<Link to='/signup' className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+					<Link to='/signup' className='text-sm hover:underline  text-gray-300 hover:text-black mt-2 inline-block'>
 						{"Don't"} have an account?
 					</Link>
 
 					{/* Login button */}
 					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
+						<button className='btn btn-block btn-sm p-1 border   hover:text-black border-slate-700 text-gray-300 mt-2' disabled={loading}>
 							{loading ? <span className='loading loading-spinner'></span> : "Login"}
 						</button>
 					</div>

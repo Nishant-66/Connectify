@@ -33,7 +33,7 @@ const SignUp = () => {
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				{/* Title */}
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
-					Sign Up <span className='text-blue-500'> ChatApp</span>
+					Sign Up <span className='text-blue-500'> Connectify</span>
 				</h1>
 
 				{/* Sign-up form */}
@@ -41,11 +41,11 @@ const SignUp = () => {
 					{/* Full Name input field */}
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Full Name</span>
+							<span className='text-base label-text  text-gray-300'>Full Name</span>
 						</label>
 						<input
 							type='text'
-							placeholder='John Doe'
+							placeholder=' John Doe'
 							className='w-full input input-bordered h-10'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })} // Update fullName in state
@@ -55,11 +55,11 @@ const SignUp = () => {
 					{/* Username input field */}
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-base label-text  text-gray-300'>Username</span>
 						</label>
 						<input
 							type='text'
-							placeholder='johndoe'
+							placeholder=' johndoe'
 							className='w-full input input-bordered h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })} // Update username in state
@@ -69,11 +69,11 @@ const SignUp = () => {
 					{/* Password input field */}
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-base label-text  text-gray-300'>Password</span>
 						</label>
 						<input
 							type='password'
-							placeholder='Enter Password'
+							placeholder=' Enter Password'
 							className='w-full input input-bordered h-10'
 							value={inputs.password}
 							onChange={(e) => setInputs({ ...inputs, password: e.target.value })} // Update password in state
@@ -83,11 +83,11 @@ const SignUp = () => {
 					{/* Confirm Password input field */}
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Confirm Password</span>
+							<span className='text-base label-text  text-gray-300'>Confirm Password</span>
 						</label>
 						<input
 							type='password'
-							placeholder='Confirm Password'
+							placeholder=' Confirm Password'
 							className='w-full input input-bordered h-10'
 							value={inputs.confirmPassword}
 							onChange={(e) => setInputs({ ...inputs, confirmPassword: e.target.value })} // Update confirmPassword in state
@@ -98,13 +98,13 @@ const SignUp = () => {
 					<GenderCheckbox onCheckboxChange={handleCheckboxChange} selectedGender={inputs.gender} />
 
 					{/* Link to login page */}
-					<Link to='/login' className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+					<Link to='/login' className='text-sm hover:underline  text-gray-300 hover:text-black mt-2 inline-block'>
 						Already have an account?
 					</Link>
 
 					{/* Sign Up button */}
 					<div>
-						<button className='btn btn-block btn-sm mt-2 border border-slate-700' disabled={loading}>
+						<button className='btn btn-block btn-sm mt-2 p-1  hover:text-black  text-gray-300 border border-slate-700' disabled={loading}>
 							{loading ? <span className='loading loading-spinner'></span> : "Sign Up"}
 						</button>
 					</div>
